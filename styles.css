@@ -1,0 +1,328 @@
+* {
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Jost', Times, serif;
+}
+
+html,
+body {
+    height: 100%
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 6.3rem;
+}
+
+nav {
+    font-size: 1.25rem;
+    padding-top: 2.5rem;
+}
+
+.phone.menu a {
+    padding-left: 29.4rem;
+}
+
+nav a {
+    padding: 0rem 1.25rem;
+}
+
+nav a:hover,
+.phone:hover {
+    text-decoration: underline;
+}
+
+.mainpage,
+footer {
+    background: #141024;
+    color: white;
+}
+
+.menu2 {
+    display: flex;
+    padding: 7.5rem 13.3rem 0rem 13.3rem;
+    gap: 1.75rem;
+}
+
+.aboutschool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 38vw;
+}
+
+.menu2 .aboutschool p {
+    font-size: 4.4rem;
+    font-weight: bold;
+}
+
+.menu2 .aboutschool div {
+    font-size: 1.25rem;
+    padding-bottom: 3.125rem;
+}
+
+.aboutschool button {
+    background: #D52027;
+    color: white;
+    width: 16.25rem;
+    height: 4.9rem;
+    font-size: 1.125rem;
+}
+
+.aboutschool button a {
+    font-size: 1.125rem;
+    color: white;
+}
+
+.menu2 img {
+    height: 57rem;
+    width: 49rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 7.5rem 0rem 0rem 13.3rem;
+}
+
+.container p {
+    flex: auto;
+    font-size: 1.875rem;
+}
+
+.container2 {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 7.5rem;
+}
+
+.container2 .count p {
+    margin: 2rem 0rem;
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: #D52027;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    padding: 6.2rem 0rem 6.2rem 13.3rem;
+    background: #F9F9F9;
+}
+
+.resultschool {
+    display: flex;
+    gap: 1rem;
+    padding: 3.75rem 13.3rem 0rem 0rem;
+}
+
+.info {
+    display: flex;
+}
+
+.icon .info {
+    align-self: flex-start;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 0.9rem 1.25rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: 2em;
+}
+
+.container3 p,
+.result,
+.teachers p,
+.teachername,
+.offers p,
+.offername,
+.cost {
+    font-weight: bold;
+}
+
+.container3 p,
+.teachers p,
+.offers p,
+.cost {
+    font-size: 3.1rem;
+    margin: 0rem;
+}
+
+.result,
+.teachername {
+    font-size: 1.5rem;
+}
+
+.result1,
+.subject {
+    padding: 1.25rem 0rem;
+    font-size: 1.2rem;
+}
+
+.teachers {
+    display: flex;
+    flex-direction: column;
+    padding: 6.2rem 0rem 6.2rem 13.3rem;
+}
+
+.aboutteacher {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.aboutteacher img {
+    width: 22.5rem;
+    height: 31.25rem;
+    padding: 3.75rem 0rem 1.25rem;
+}
+
+.aboutteacher a {
+    padding-top: 1.25rem;
+    font-size: 1.125rem;
+    color: #D52027;
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    padding: 6.2rem 0rem 6.2rem 13.3rem;
+}
+
+.offer {
+    display: flex;
+    align-items: stretch;
+    gap: 2.5rem;
+    padding-top: 3.75rem;
+}
+
+.offername {
+    font-size: 1.875rem;
+    padding-top: 2.5rem;
+}
+
+.cost {
+    padding: 5.2rem 0rem 1.25rem;
+}
+
+.offer button {
+    color: white;
+    background: #D52027;
+    font-size: 1.125rem;
+    padding: 1.6rem 3.7rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0rem;
+}
+
+.offer1,
+.offer2,
+.offer3 {
+    border: 1px solid black;
+    border-radius: 1.25rem;
+    width: 22.5rem;
+    height: 28.75rem;
+    text-align: center;
+}
+
+.offer1:hover,
+.offer2:hover,
+.offer3:hover {
+    transform: scale(1.08);
+    z-index: 1;
+    transition: transform .5s;
+    color: white;
+    background: #141024;
+}
+
+.register {
+    background-color: #D52027;
+    background-image: url('assets/persent_background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    height: 28.75rem;
+}
+
+.registerinfo {
+    padding: 9rem;
+}
+
+.registerinfo p {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.sale {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.form input {
+    border-radius: 0.31rem;
+    padding-left: 1.25rem;
+    font-size: 1.125rem;
+    height: 4rem;
+    width: 31.25rem;
+}
+
+.form button {
+    background: #141024;
+    color: white;
+    border-radius: 0.31rem;
+    font-size: 1.125rem;
+    height: 4rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 9.9rem;
+    padding: 0rem 6.3rem;
+}
+
+footer .logo,
+footer .phone,
+.menu .logo,
+.menu .phone {
+    font-size: 1.9rem;
+    font-weight: bold;
+    padding-top: 2.5rem;
+}
+
+footer p {
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+
+.phone a,
+nav a {
+    color: white;
+}
